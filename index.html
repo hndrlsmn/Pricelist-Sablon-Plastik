@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Harga & Spesifikasi Sablon Plastik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #25D366;
+            --primary-dark: #128C7E;
+            --secondary: #168e7d;
+            --accent: #FF6B35;
+            --dark: #1a1c2c;
+            --light: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            margin: 0;
+            padding: 40px 5%;
+        }
+
+        .container { max-width: 1000px; margin: 0 auto; }
+        
+        .header { text-align: center; margin-bottom: 50px; }
+        .header h1 { font-family: 'Syne', sans-serif; font-size: 2.5rem; color: var(--dark); margin-bottom: 10px; }
+        
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 40px 0 20px;
+            font-family: 'Syne', sans-serif;
+            color: var(--secondary);
+            border-bottom: 3px solid var(--secondary);
+            padding-bottom: 10px;
+        }
+
+        .price-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--white);
+        }
+
+        th {
+            background-color: var(--secondary);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            font-size: 0.95rem;
+        }
+
+        .price-tag { color: var(--primary-dark); font-weight: bold; }
+        .spec-tag { font-size: 0.85rem; color: #666; font-style: italic; }
+
+        .info-box {
+            background: #e8f4f2;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            border-left: 5px solid var(--secondary);
+        }
+
+        .btn-order {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background: var(--primary);
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 10px;
+            margin-top: 40px;
+            transition: 0.3s;
+        }
+
+        .btn-order:hover { background: var(--primary-dark); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Katalog Harga Detail</h1>
+        <p>Minimal Order: 100 pcs per ukuran/jenis</p>
+    </div>
+
+    <!-- KATEGORI HD KRESEK -->
+    <h2 class="section-title"><i class="fas fa-shopping-bag"></i> Plastik HD Kresek (HDPE)</h2>
+    <div class="price-card">
+        <table>
+            <thead>
+                <tr>
+                    <th>Ukuran</th>
+                    <th>Kapasitas/Fungsi</th>
+                    <th>Harga/Pcs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>15 x 30 cm</td>
+                    <td><span class="spec-tag">Barang Kecil / Snack</span></td>
+                    <td class="price-tag">Rp 450</td>
+                </tr>
+                <tr>
+                    <td>17 x 33 cm</td>
+                    <td><span class="spec-tag">Kemasan Ringan</span></td>
+                    <td class="price-tag">Rp 550</td>
+                </tr>
+                <tr>
+                    <td>24 x 40 cm</td>
+                    <td><span class="spec-tag">Belanjaan 1-2 kg</span></td>
+                    <td class="price-tag">Rp 650</td>
+                </tr>
+                <tr>
+                    <td>28 x 48 cm</td>
+                    <td><span class="spec-tag">Belanjaan 2-3 kg</span></td>
+                    <td class="price-tag">Rp 750*</td>
+                </tr>
+                <tr>
+                    <td>35 x 55 cm</td>
+                    <td><span class="spec-tag">Laundry / 3-5 kg</span></td>
+                    <td class="price-tag">Rp 850*</td>
+                </tr>
+                    <td>40 x 60 cm</td>
+                    <td><span class="spec-tag">Laundry / 5-7 kg</span></td>
+                    <td class="price-tag">Rp 1.000*</td>
+                </tr>
+                </tr>
+                    <td>50 x 75 cm</td>
+                    <td><span class="spec-tag">Laundry / 7-10 kg</span></td>
+                    <td class="price-tag">Rp 1.000*</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="info-box">
+            <strong>Karakteristik:</strong> Bahan kaku, tidak elastis, tahan panas. Cocok untuk kantong belanja umum dan kresek sampah.
+        </div>
+    </div>
+
+    <!-- KATEGORI KLIP ZIPLOCK -->
+    <h2 class="section-title"><i class="fas fa-bolt"></i> Plastik Klip / Zip Lock</h2>
+    <div class="price-card">
+        <table>
+            <thead>
+                <tr>
+                    <th>Ukuran</th>
+                    <th>Kategori</th>
+                    <th>Harga/Pcs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>4x6 / 5x8 cm</td>
+                    <td><span class="spec-tag">Obat / Aksesoris Kecil</span></td>
+                    <td class="price-tag">Rp 300*</td>
+                </tr>
+                <tr>
+                    <td>8x12 / 10x17 cm</td>
+                    <td><span class="spec-tag">Kosmetik / Gadget</span></td>
+                    <td class="price-tag">Rp 500*</td>
+                </tr>
+                <tr>
+                    <td>20 x 30 cm</td>
+                    <td><span class="spec-tag">Pakaian / Hijab</span></td>
+                    <td class="price-tag">Rp 850</td>
+                </tr>
+                <tr>
+                    <td>30 x 40 cm</td>
+                    <td><span class="spec-tag">Jaket / Tas Sedang</span></td>
+                    <td class="price-tag">Rp 1.200</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="info-box">
+            <strong>Karakteristik:</strong> Bening transparan dengan pengunci rapat. Ideal untuk produk yang perlu dibuka-tutup.
+        </div>
+    </div>
+
+    <!-- KATEGORI PP, PE & OPP -->
+    <h2 class="section-title"><i class="fas fa-box"></i> Plastik PP, PE & OPP</h2>
+    <div class="price-card">
+        <table>
+            <thead>
+                <tr>
+                    <th>Jenis & Ukuran</th>
+                    <th>Kapasitas</th>
+                    <th>Harga/Pcs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>OPP 15 x 15 cm</td>
+                    <td><span class="spec-tag">Roti / Snack (Bening Kaca)</span></td>
+                    <td class="price-tag">Rp 350</td>
+                </tr>
+                <tr>
+                    <td>PP 12 x 25 cm</td>
+                    <td><span class="spec-tag">Kemasan 1/2 kg (Kaku)</span></td>
+                    <td class="price-tag">Rp 400*</td>
+                </tr>
+                <tr>
+                    <td>PE 15 x 30 cm</td>
+                    <td><span class="spec-tag">Kemasan 1 kg (Lentur)</span></td>
+                    <td class="price-tag">Rp 500*</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p style="font-size: 0.8rem; color: #999;">*Harga estimasi berdasarkan standar pasar terbaru, silakan hubungi admin untuk update harga volume besar.</p>
+    
+    <div style="background: var(--dark); color: white; padding: 25px; border-radius: 15px; margin-top: 30px;">
+        <h4 style="margin-top:0"><i class="fas fa-star" style="color:var(--accent)"></i> Layanan Eksklusif:</h4>
+        <ul style="margin-bottom:0">
+            <li><strong>Konsultasi Desain Kaos Kelas Gratis</strong> untuk setiap paket branding.</li>
+            <li><strong>Solusi Sablon Plastik</strong> teknis agar cetakan awet dan tidak pecah.</li>
+        </ul>
+    </div>
+
+    <a href="https://wa.me/6281293108522" class="btn-order">
+        <i class="fab fa-whatsapp"></i> Chat Admin Sekarang
+    </a>
+</div>
+
+</body>
+</html>
